@@ -7,7 +7,6 @@ import emailOlvidePassword from "../helpers/emailOlvidePassword.js";
 
 
 const registrar = async (req, res) => {
-    // console.log(req.body);
     const { email, nombre } = req.body;
 
     // Prevenir usuarios duplicados
