@@ -32,6 +32,7 @@ const corsOptions = {
     //Si es distinto a menos uno significa que si lo encontro
     
     console.log(dominiosPermitidos)
+    console.log(dominiosPermitidos)
     console.log(origin)
     console.log(dominiosPermitidos.indexOf(origin))
 
