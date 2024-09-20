@@ -50,11 +50,11 @@ const perfil = (req, res) => {
 const confirmar = async (req, res) => {
     const { token } = req.params;
 
-    
-
+    console.log('hola usuario confirmar')
+    console.log(token)
     const usuarioConfirmar = await Veterinario.findOne({ token });
 
-    console.log(usuarioConfirmar);
+    console.log(`Aqui el usuario confirmar${usuarioConfirmar}`);
 
     if (!usuarioConfirmar) {
         const error = new Error('Token no válido');
