@@ -23,9 +23,7 @@ conectarDB();
 //Aqui colocamos los dominios permitidos
 const dominiosPermitidos = [process.env.FRONTEND_URL]
 
-console.log(dominiosPermitidos)
-console.log(`origin antes de cor option${origin}`)
-console.log(`dominiosPermitidos.indexOf(origin) antes de cor option${dominiosPermitidos.indexOf(origin)}`)
+
 
 
 
@@ -34,8 +32,10 @@ const corsOptions = {
     //Si es distinto a menos uno significa que si lo encontro
     
     console.log(dominiosPermitidos)
-console.log(`origin entre de cor option${origin}`)
-console.log(`dominiosPermitidos.indexOf(origin) entre de cor option${dominiosPermitidos.indexOf(origin)}`)
+console.log(`origin antes de cor option${origin}`)
+console.log(`dominiosPermitidos.indexOf(origin) antes de cor option${dominiosPermitidos.indexOf(origin)}`)
+
+
 
     if (dominiosPermitidos.indexOf(origin) !== -1) {
   // El Origen del reques esta permitido
@@ -46,9 +46,7 @@ console.log(`dominiosPermitidos.indexOf(origin) entre de cor option${dominiosPer
  }
 }
 
-console.log(dominiosPermitidos)
-console.log(`origin despues de cor option${origin}`)
-console.log(`dominiosPermitidos.indexOf(origin) despues de cor option${dominiosPermitidos.indexOf(origin)}`)
+
 
 app.use(cors(corsOptions));
 
