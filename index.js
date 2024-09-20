@@ -31,15 +31,10 @@ const corsOptions = {
   origin: function (origin, callback) {
     //Si es distinto a menos uno significa que si lo encontro
     
-    console.log(dominiosPermitidos)
-    console.log(dominiosPermitidos)
-    console.log(origin)
-    console.log(dominiosPermitidos.indexOf(origin))
-
-
 
     if (!origin || dominiosPermitidos.indexOf(origin) !== -1) {
-  // El Origen del reques esta permitido
+      // El Origen del reques esta permitido
+      console.log('Paso!!')
       callback(null, true);
 } else {
   callback(new Error('No permitido por CORS'))
