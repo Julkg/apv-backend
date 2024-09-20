@@ -32,8 +32,8 @@ const corsOptions = {
     //Si es distinto a menos uno significa que si lo encontro
     
     console.log(dominiosPermitidos)
-console.log(`origin antes de cor option${origin}`)
-console.log(`dominiosPermitidos.indexOf(origin) antes de cor option${dominiosPermitidos.indexOf(origin)}`)
+    console.log(origin)
+    console.log(dominiosPermitidos.indexOf(origin))
 
 
 
