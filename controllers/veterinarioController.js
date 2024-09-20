@@ -58,7 +58,7 @@ const confirmar = async (req, res) => {
 
     if (!usuarioConfirmar) {
         const error = new Error('Token no válido');
-        return res.status(4042.json({ msg: error.message });
+        return res.status(402).json({ msg: error.message });
     }
 
     try {
