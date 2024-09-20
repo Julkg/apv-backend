@@ -37,7 +37,7 @@ const corsOptions = {
 
 
 
-    if (dominiosPermitidos.indexOf(origin) !== -1) {
+    if (!origin || dominiosPermitidos.indexOf(origin) !== -1) {
   // El Origen del reques esta permitido
       callback(null, true);
 } else {
